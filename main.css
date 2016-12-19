@@ -1,5 +1,4 @@
 /* reset css */
-/* Le bloc reset css sert a remettre toute les marges a zéro pour pouvoir les placés correctement par la suite. il sert aussi entre autre à enlever les puces de listes et le soulignement des liens */
 body{
 	margin: 10px;
 	background-color: #123B38; /* changement couleur */
@@ -22,6 +21,7 @@ ul{
 
 li{
 	list-style-type: none;
+	margin-right: 10px;
 	width: 80%;
 	padding: 15px;
 	margin: auto;
@@ -32,10 +32,8 @@ background-color: rgba(18,59,56,0.4);
 
 a{
 	text-decoration: none;
-	font-size: 25px;
-	color: white; /*passage a blanc */
-	transition : 0.5s;
-	text-decoration: underline;
+	font-size: 20px;
+	color: #663399; /* REBECCAPURPLE */
 }
 
 a:hover{
@@ -43,6 +41,12 @@ a:hover{
 }
 
 /* header */
+header{
+	background-color: grey;
+	width: 100%;
+	margin: auto;
+}
+
 header h1{
 	padding-top: 15px;
 }
@@ -51,13 +55,13 @@ header h1{
 /* nav */
 nav ul{
 	margin-top: 50px;
-	display: flex; /* utilisation des flexbox */
-	flex-direction: column; /* on dit a flexbox de placer les éléments en collones*/
-	justify-content: center; /* on aligne les éléments */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-nav li{ /* on applique une transition sur le background color de 0.8s de facon linéaire.*/
-	transition-property: background-color; 
+nav li{
+	transition-property: background-color;
 	transition-duration: 0.8s;
 	transition-timing-function: linear;
 }
@@ -102,7 +106,6 @@ section article h3, p{
 
 
 /* class de mise en forme */
-/* cette classe permet de positionner l'élément à droite */
 .pair{
 	float: right;
 	display: inline-block;
@@ -111,7 +114,6 @@ section article h3, p{
 	margin:1% 4% 1% 1%;
 }
 
-/* cette classe permet de positionner l'élément à gauche */
 .impair{
 	float: left;
 	display: inline-block;
@@ -120,16 +122,12 @@ section article h3, p{
 	margin:1% 1% 1% 4%;
 }
 
-.shadow{
-transition : 0.3s;
-}
 
 /* on appluqe la pseudo classe hover à une classe */
 .shadow:hover{
 	box-shadow: 4px 4px 2px rgba(0,0,0,0.8);
 }
 
-/* cette section correspond au couleur de chaque carré */
 .color1{
 	background-color: #449496; /* grey EDWARD */
 	transition : 0.3s;
