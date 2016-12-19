@@ -1,14 +1,15 @@
 /* reset css */
 /* Le bloc reset css sert a remettre toute les marges a zéro pour pouvoir les placés correctement par la suite. il sert aussi entre autre à enlever les puces de listes et le soulignement des liens */
 body{
-	margin: 0;
-	background-color: #EFEFEF;
+	margin: 10px;
+	background-color: #123B38; /* changement couleur */
 }
 
 h1, h2, h3, p{
 	text-align: center;
 	margin: 0 10px;
 	margin-bottom: 10px;
+	color: white;
 }
 
 ul{
@@ -16,6 +17,7 @@ ul{
 	padding: 0;
 	margin: 0;
 	height: 200px;
+	
 }
 
 li{
@@ -23,14 +25,22 @@ li{
 	width: 80%;
 	padding: 15px;
 	margin: auto;
+	font-size: 20px;
+	color: white;
+background-color: rgba(18,59,56,0.4);
 }
 
 a{
 	text-decoration: none;
-	font-size: 20px;
-	color: #663399; /* purple REBECCA */
+	font-size: 25px;
+	color: white; /*passage a blanc */
+	transition : 0.5s;
+	text-decoration: underline;
 }
 
+a:hover{
+	letter-spacing: 2px;
+}
 
 /* header */
 header h1{
@@ -53,19 +63,19 @@ nav li{ /* on applique une transition sur le background color de 0.8s de facon l
 }
 
 nav li:first-child:hover{
-	background-color: #19B5FE; /* blue DODGER */
+	background-color: #67E0E2; /* blue DODGER */
 }
 
 nav li:nth-child(2):hover{
-	background-color: #E87E04; /* orange TAHITI GOLD */
+	background-color: #55BABC; /* orange TAHITI GOLD */
 }
 
 nav li:nth-child(3):hover{
-	background-color: #049372; /* blue OBSERVATORY */
+	background-color: #67E0E2; /* blue OBSERVATORY */
 }
 
 nav li:last-child:hover{
-	background-color: #D35400; /* orange BURNT */
+	background-color: #55BABC; /* orange BURNT */
 }
 
 
@@ -82,7 +92,8 @@ section article{
 	margin: auto;
 	margin-bottom: 50px;
 	width: 90%;
-	background-color: #BFBFBF; /* grey SILVER*/
+	background-color: #123B38;
+	border: 1px solid rgba(255,255,255,0.7); /* grey SILVER*/
 }
 
 section article h3, p{
@@ -109,33 +120,66 @@ section article h3, p{
 	margin:1% 1% 1% 4%;
 }
 
+.shadow{
+transition : 0.3s;
+}
+
 /* on appluqe la pseudo classe hover à une classe */
 .shadow:hover{
-	box-shadow: 4px 4px 2px #888888;
+	box-shadow: 4px 4px 2px rgba(0,0,0,0.8);
 }
 
 /* cette section correspond au couleur de chaque carré */
 .color1{
-	background-color: #ABB7B7; /* grey EDWARD */
+	background-color: #449496; /* grey EDWARD */
+	transition : 0.3s;
 }
 
 .color2{
-	background-color: #446CB3; /* blue SAN MARINO */	
+	background-color: #449496; /* blue SAN MARINO */
+	transition : 0.3s;	
 }
 
 .color3{
-	background-color: #95A5A6; /* grey CASCADE */
+	background-color: #55BABC; /* grey CASCADE */
+	transition : 0.3s;
 }
 
 .color4{
-	background-color: #336E7B; /* blue MING */
+	background-color: #55BABC; /* blue MING */
+	transition : 0.3s;
 }
 
 .color5{
-	background-color: #6C7A89; /* grey LYNCH */
+	background-color: #55BABC; /* grey LYNCH */
+	transition : 0.3s;
 }
 
 .color6{
-	background-color: #34495E; /* blue PICKLED BLUEWOOD */
+	background-color: #55BABC; /* blue PICKLED BLUEWOOD */
+	transition : 0.3s;
 }
 
+.color1:hover{
+	background-color: rgba(68,148,150,0.4);
+}
+
+.color2:hover{
+	background-color: rgba(68,148,150,0.4);
+}
+
+.color3:hover{
+	background-color: rgba(68,148,150,0.4);
+}
+
+.color4:hover{
+	background-color: rgba(68,148,150,0.4);
+}
+
+.color5:hover{
+	background-color: rgba(68,148,150,0.4);
+}
+
+.color6:hover{
+	background-color: rgba(68,148,150,0.4);
+}
