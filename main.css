@@ -1,141 +1,115 @@
+@charset "UTF-8";
+/* section */
+/* test theme */
 /* reset css */
 /* Le bloc reset css sert a remettre toute les marges a zéro pour pouvoir les placés correctement par la suite. il sert aussi entre autre à enlever les puces de listes et le soulignement des liens */
-body{
-	margin: 0;
-	background-color: #EFEFEF;
-}
+body {
+  margin: 0;
+  background-color: lightgrey; }
 
-h1, h2, h3, p{
-	text-align: center;
-	margin: 0 10px;
-	margin-bottom: 10px;
-}
+h1, h2, h3, p {
+  text-align: center;
+  margin: 0 10px;
+  margin-bottom: 10px; }
 
-ul{
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	height: 200px;
-}
-
-li{
-	list-style-type: none;
-	width: 80%;
-	padding: 15px;
-	margin: auto;
-}
-
-a{
-	text-decoration: none;
-	font-size: 20px;
-	color: #663399; /* purple REBECCA */
-}
-
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 200px; }
+  ul li {
+    list-style-type: none;
+    width: 80%;
+    padding: 15px;
+    margin: auto; }
+    ul li a {
+      text-decoration: none;
+      font-size: 20px;
+      color: black; }
 
 /* header */
-header h1{
-	padding-top: 15px;
-}
-
+header h1 {
+  padding-top: 15px; }
 
 /* nav */
-nav ul{
-	margin-top: 50px;
-	display: flex; /* utilisation des flexbox */
-	flex-direction: column; /* on dit a flexbox de placer les éléments en collones*/
-	justify-content: center; /* on aligne les éléments */
-}
-
-nav li{ /* on applique une transition sur le background color de 0.8s de facon linéaire.*/
-	transition-property: background-color; 
-	transition-duration: 0.8s;
-	transition-timing-function: linear;
-}
-
-nav li:first-child:hover{
-	background-color: #19B5FE; /* blue DODGER */
-}
-
-nav li:nth-child(2):hover{
-	background-color: #E87E04; /* orange TAHITI GOLD */
-}
-
-nav li:nth-child(3):hover{
-	background-color: #049372; /* blue OBSERVATORY */
-}
-
-nav li:last-child:hover{
-	background-color: #D35400; /* orange BURNT */
-}
-
+nav ul {
+  margin-top: 50px;
+  display: flex;
+  /* utilisation des flexbox */
+  flex-direction: column;
+  /* on dit a flexbox de placer les éléments en collones*/
+  justify-content: center;
+  /* on aligne les éléments */ }
+  nav ul li {
+    /* on applique une transition sur le background color de 0.8s de facon linéaire.*/
+    -webkit-transition: background-color 0.8s linear;
+    -moz-transition: background-color 0.8s linear;
+    -o-transition: background-color 0.8s linear;
+    transition: background-color 0.8s linear; }
+  nav ul li:first-child:hover {
+    background-color: #f8f8f8; }
+  nav ul li:nth-child(2):hover {
+    background-color: #ECECEB; }
+  nav ul li:nth-child(3):hover {
+    background-color: #e0e0de; }
+  nav ul li:last-child:hover {
+    background-color: #d3d3d1; }
 
 /* section */
-section{
-	margin: auto;
-}
-
-section h2{
-	margin: 20px 0;
-}
-
-section article{
-	margin: auto;
-	margin-bottom: 50px;
-	width: 90%;
-	background-color: #BFBFBF; /* grey SILVER*/
-}
-
-section article h3, p{
-	padding: 5px;
-}
-
+section {
+  margin: auto; }
+  section h2 {
+    margin: 20px 0; }
+  section article {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 90%;
+    background-color: lightgrey;
+    /* grey SILVER*/ }
+    section article h3, section article p {
+      padding: 5px; }
 
 /* class de mise en forme */
 /* cette classe permet de positionner l'élément à droite */
-.pair{
-	float: right;
-	display: inline-block;
-	width: 45%;
-	height: 300px;
-	margin:1% 4% 1% 1%;
-}
+.pair {
+  float: right;
+  display: inline-block;
+  width: 45%;
+  height: 300px;
+  margin: 1% 4% 1% 1%; }
 
 /* cette classe permet de positionner l'élément à gauche */
-.impair{
-	float: left;
-	display: inline-block;
-	width: 45%;
-	height: 300px;
-	margin:1% 1% 1% 4%;
-}
+.impair {
+  float: left;
+  display: inline-block;
+  width: 45%;
+  height: 300px;
+  margin: 1% 1% 1% 4%; }
 
 /* on appluqe la pseudo classe hover à une classe */
-.shadow:hover{
-	box-shadow: 4px 4px 2px #888888;
-}
+.shadow:hover {
+  -webkit-box-shadow: 4px 4px 2px #888888;
+  -moz-box-shadow: 4px 4px 2px #888888;
+  -o-box-shadow: 4px 4px 2px #888888;
+  box-shadow: 4px 4px 2px #888888; }
 
 /* cette section correspond au couleur de chaque carré */
-.color1{
-	background-color: #ABB7B7; /* grey EDWARD */
-}
+.color1 {
+  background-color: #fabc5a; }
 
-.color2{
-	background-color: #446CB3; /* blue SAN MARINO */	
-}
+.color2 {
+  background-color: #0a86ad; }
 
-.color3{
-	background-color: #95A5A6; /* grey CASCADE */
-}
+.color3 {
+  background-color: #F9A828; }
 
-.color4{
-	background-color: #336E7B; /* blue MING */
-}
+.color4 {
+  background-color: #07617D; }
 
-.color5{
-	background-color: #6C7A89; /* grey LYNCH */
-}
+.color5 {
+  background-color: #e89006; }
 
-.color6{
-	background-color: #34495E; /* blue PICKLED BLUEWOOD */
-}
+.color6 {
+  background-color: #043c4d; }
 
+/*# sourceMappingURL=main.css.map */

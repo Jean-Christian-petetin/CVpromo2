@@ -1,0 +1,32 @@
+/* reset css */
+/* Le bloc reset css sert a remettre toute les marges a zéro pour pouvoir les placés correctement par la suite. il sert aussi entre autre à enlever les puces de listes et le soulignement des liens */
+body{
+	margin: 0;
+	background-color: $bgBodyColor;
+}
+
+h1, h2, h3, p{
+	text-align: center;
+	margin: 0 10px;
+	margin-bottom: 10px;
+}
+
+ul{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	
+	li{
+		list-style-type: none;
+		width: 80%;
+		padding: 15px;
+		margin: auto;
+
+		a{
+			text-decoration: none;
+			font-size: 20px;
+			color: $colorLink;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+/* nav */
+nav{
+	ul{
+		margin-top: 50px;
+		display: flex; /* utilisation des flexbox */
+		flex-direction: column; /* on dit a flexbox de placer les éléments en collones*/
+		justify-content: center; /* on aligne les éléments */
+
+		li{ /* on applique une transition sur le background color de 0.8s de facon linéaire.*/
+			@include transitionNavHover(background-color, 0.8s, linear);
+		}
+
+		li:first-child:hover{
+			background-color: lighten($linkHover, 5%);
+		}
+
+		li:nth-child(2):hover{
+			background-color: $linkHover;
+		}
+
+		li:nth-child(3):hover{
+			background-color: darken($linkHover, 5%);
+		}
+
+		li:last-child:hover{
+			background-color: darken($linkHover, 10%);
+		}
+
+	}
+
+}
+
+
+

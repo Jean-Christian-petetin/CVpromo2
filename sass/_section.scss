@@ -1,0 +1,69 @@
+/* section */
+section{
+	margin: auto;
+	
+	h2{
+		margin: 20px 0;
+	}
+
+	article{
+		margin: auto;
+		margin-bottom: 50px;
+		width: 90%;
+		background-color: $bgBodyColor; /* grey SILVER*/
+
+		h3, p{
+			padding: 5px;
+		}
+	}
+}
+
+
+/* class de mise en forme */
+/* cette classe permet de positionner l'élément à droite */
+.pair{
+	float: right;
+	display: inline-block;
+	width: 45%;
+	height: 300px;
+	margin:1% 4% 1% 1%;
+}
+
+/* cette classe permet de positionner l'élément à gauche */
+.impair{
+	float: left;
+	display: inline-block;
+	width: 45%;
+	height: 300px;
+	margin:1% 1% 1% 4%;
+}
+
+/* on appluqe la pseudo classe hover à une classe */
+.shadow:hover{
+	@include boxShadowSection(4px, 4px, 2px, #888888);
+}
+
+/* cette section correspond au couleur de chaque carré */
+.color1{
+	background-color: lighten($leftColor, 10%);
+}
+
+.color2{
+	background-color: lighten($rightColor, 10%);	
+}
+
+.color3{
+	background-color: $leftColor;
+}
+
+.color4{
+	background-color: $rightColor;
+}
+
+.color5{
+	background-color: darken($leftColor, 10%);
+}
+
+.color6{
+	background-color: darken($rightColor, 10%);
+}
