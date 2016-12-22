@@ -86,7 +86,11 @@ section {
   height: 300px;
   margin: 1% 1% 1% 4%; }
 
-/* on appluqe la pseudo classe hover à une classe */
+.shadow{
+transition : 0.3s;
+}
+
+/* on appliqe la pseudo classe hover à une classe */
 .shadow:hover {
   -webkit-box-shadow: 4px 4px 2px #888888;
   -moz-box-shadow: 4px 4px 2px #888888;
